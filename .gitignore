@@ -1,0 +1,16 @@
+/bower_components/*
+/.sass-cache/*
+*.DS_Store
+/stylesheets/*
+
+#production file
+prod
+
+#parse config file
+dev/parse/config
+
+#node modules
+node_modules
+
+#npm debug file
+npm-debug.log

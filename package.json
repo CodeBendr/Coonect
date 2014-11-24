@@ -1,0 +1,14 @@
+{
+    "name": "Coonect",
+    "version": "0.0.1-beta",
+    "description": "Simple card game",
+    "author": "Evans Domina Attafuah",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://Pixelbender@bitbucket.org/Pixelbender/charlotte-prive.git"
+    },
+    "devDependencies": {
+        "grunt": "^0.4.5"
+    }
+}
