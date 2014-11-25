@@ -1,0 +1,12 @@
+{
+    "dev": {
+        "path": {
+            "foundation_sass": "dev/parse/public/scss/app.scss",
+            "foundation_css": "dev/parse/public/stylesheets/app.css",
+            "foundation_settings": "dev/parse/public/scss/_settings.scss"
+        }
+    },
+    "prod": {
+        "path": {}
+    }
+}

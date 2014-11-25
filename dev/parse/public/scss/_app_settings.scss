@@ -1,4 +1,13 @@
 //app specific font loaded from google or any font hosting service
 //also has extra code for js or css based on your
 //chosen or settings allowed by the service
-$app-font:'Lato', sans-serif;
+$font-family:'Lato', sans-serif;
+$font-weight-thin:100;
+$font-weight-light:300;
+$font-weight-regular:400;
+
+//app colors and branding
+$color-blue:#68A4F8;
+$color-blue-light-20:lighten($color-blue,20%);
+$color-blue-light-40:lighten($color-blue,40%);
+$color-blue-light-80:lighten($color-blue,80%);

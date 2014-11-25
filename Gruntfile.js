@@ -1,15 +1,8 @@
 module.exports = function (grunt) {
 
     grunt.initConfig({
-        path: {
-            dev: 'dev/parse',
-            prod: 'prod/parse',
-            sass: '<%= path.dev %>/public/scss',
-            stylesheet: '<%= path.dev %>/public/stylesheet',
-            foundation_sass: '<%= path.sass %>/app.scss',
-            foundation_css: '<%= path.stylesheet %>/app.css',
-            foundation_settings: '<%= path.sass %>/_settings.scss'
-        },
+        config: grunt.file.readJSON('config.json'),
+        package: grunt.file.readJSON('package.json'),
         sass: {
             dist: {
                 options: {
@@ -27,7 +20,7 @@ module.exports = function (grunt) {
                     loadPath: ['bower_components/foundation/scss']
                 },
                 files: {
-                    '<%= path.foundation_css %>': '<%= path.foundation_sass %>'
+                    '<%= config.dev.path.foundation_css %>': '<%= config.dev.path.foundation_sass %>'
                 }
             }
         },
@@ -39,8 +32,8 @@ module.exports = function (grunt) {
             },
             foundation: {
                 files: [
-                    '<%= path.foundation_sass %>',
-                    '<%= path.foundation_settings %>'
+                    '<%= config.dev.path.foundation_sass %>',
+                    '<%= config.dev.path.foundation_settings %>'
                 ],
                 tasks: "sass:foundation"
             }
