@@ -57,6 +57,9 @@
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import "foundation/functions";
 
+//import app specific sass files
+@import "app_settings";
+
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
 
@@ -122,11 +125,13 @@ $include-html-global-classes: $include-html-classes;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
+ $primary-color: #68A4F8;
+ $secondary-color: #FF4187;
 
 // We use these to control various global styles
 // $body-bg: $white;
 // $body-font-color: $jet;
-// $body-font-family: $font-family-sans-serif;
+ $body-font-family: $app-font;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 

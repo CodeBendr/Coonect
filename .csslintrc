@@ -1,0 +1,8 @@
+{
+  "qualified-headings": true,
+  "unique-headings": true,
+  "known-properties": false,
+  "box-model":false,
+  "box-sizing":false,
+  "font-sizes":false
+}
